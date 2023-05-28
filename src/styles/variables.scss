@@ -1,0 +1,6 @@
+@use "src/@common/styles/mixins.scss";
+@use "src/@common/styles/scss-variables.scss";
+
+.buttonReset {
+  @include mixins.button-reset;
+}

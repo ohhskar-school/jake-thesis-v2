@@ -1,0 +1,18 @@
+@use "sanitize.scss";
+@use "typography.scss";
+@use "mixins.scss";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}

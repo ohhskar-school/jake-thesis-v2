@@ -1,0 +1,16 @@
+@use "sass:string";
+@use "sass:math";
+@use "mixins.scss";
+
+// Based on the equations as defined in the design guide Figma styles
+@mixin createPositiveType($size) {
+  font-size: mixins.to-rem($size);
+  line-height: mixins.to-rem(math.ceil(math.div(($size * 1.3), 8)) * 8);
+  letter-spacing: math.div(math.round((-0.0223 + 0.185 * math.pow(math.$e, -0.1745 * $size)) * 1000), 1000) + em;
+}
+
+@mixin createNegativeType($size) {
+  font-size: mixins.to-rem($size);
+  line-height: mixins.to-rem(math.ceil(math.div(($size * 1.3), 8)) * 8);
+  letter-spacing: math.div(math.round((-0.0173 + 0.185 * math.pow(math.$e, -0.1745 * $size)) * 1000), 1000) + em;
+}
