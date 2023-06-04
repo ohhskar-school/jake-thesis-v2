@@ -13,6 +13,7 @@
 
 .image {
   filter: blur(10px);
+  transition-delay: 500ms;
   background-image: url("/panorama.webp");
   background-position: var(--js-column) var(--js-row);
   background-size: 900%;

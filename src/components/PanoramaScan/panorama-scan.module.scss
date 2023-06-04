@@ -32,6 +32,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  padding: mixins.to-rem(64);
+  background: #fff;
   width: min(80vh, mixins.to-rem(900));
+}
+
+.p {
+  padding: mixins.to-rem(8) mixins.to-rem(16);
+  color: red;
+  text-align: center;
 }
