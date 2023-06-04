@@ -13,8 +13,7 @@
 
 .image {
   filter: blur(10px);
-  opacity: 0.5;
-  background-image: url("/panorama.jpg");
+  background-image: url("/panorama.webp");
   background-position: var(--js-column) var(--js-row);
   background-size: 900%;
   width: 100%;
@@ -24,6 +23,5 @@
 
   &___active {
     filter: blur(0);
-    opacity: 1;
   }
 }
