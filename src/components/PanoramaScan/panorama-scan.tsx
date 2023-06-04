@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { QrScanner } from "@yudiel/react-qr-scanner";
 import { Portal } from "react-portal";

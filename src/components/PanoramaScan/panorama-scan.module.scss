@@ -6,12 +6,12 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  border: none;
   border-radius: mixins.to-rem(100);
+  background-color: slateblue;
   width: mixins.to-rem(100);
   height: mixins.to-rem(100);
-  border: none;
   color: #fff;
-  background-color: slateblue;
 }
 
 .portal {
@@ -21,6 +21,8 @@
   bottom: 0;
   left: 0;
   z-index: 2;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .backdrop {
