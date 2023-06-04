@@ -1,0 +1,37 @@
+@use "mixins.scss";
+
+.button {
+  position: fixed;
+  right: mixins.to-rem(32);
+  bottom: mixins.to-rem(32);
+  z-index: 1;
+}
+
+.portal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.scanner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: mixins.to-rem(64);
+  width: min(80vh, mixins.to-rem(900));
+}

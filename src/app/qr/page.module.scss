@@ -1,0 +1,18 @@
+@use "mixins.scss";
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: min(5vw, mixins.to-rem(128));
+  margin: 0 auto;
+  padding: min(5vw, mixins.to-rem(128));
+  max-width: mixins.to-rem(1280);
+
+  @include mixins.media-breakpoint-up(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mixins.media-breakpoint-up(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
