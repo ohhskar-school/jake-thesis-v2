@@ -2,9 +2,16 @@
 
 .button {
   position: fixed;
-  right: mixins.to-rem(32);
   bottom: mixins.to-rem(32);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
+  border-radius: mixins.to-rem(100);
+  width: mixins.to-rem(100);
+  height: mixins.to-rem(100);
+  border: none;
+  color: #fff;
+  background-color: slateblue;
 }
 
 .portal {

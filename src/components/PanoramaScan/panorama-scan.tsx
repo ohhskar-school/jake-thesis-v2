@@ -63,14 +63,14 @@ function PanoramaScan({ setCellAsViewed }: PanoramaScanProps) {
 
   return (
     <>
-      <button onClick={() => setShowScanner((prev) => !prev)} className={styles.button}>
+      <button onClick={() => setShowScanner(true)} className={styles.button}>
         Scan
       </button>
 
       {showScanner && (
         <Portal>
           <div className={styles.portal}>
-            <div className={styles.backdrop} />
+            <div className={styles.backdrop} onClick={() => setShowScanner(false)} />
             <div className={styles.scanner}>
               <QrScanner onDecode={onDecode} onError={(error) => console.log(error?.message)} />
               {error && <p className={styles.p}>{error}</p>}
